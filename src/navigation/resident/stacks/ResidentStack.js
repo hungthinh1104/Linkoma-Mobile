@@ -6,6 +6,7 @@ import MaintenanceDetailsScreen from '../../../features/resident/screens/Mainten
 import PaymentScreen from '../../../features/resident/screens/PaymentScreen';
 import NotificationScreen from '../../../features/resident/screens/NotificationScreen';
 import ParkingScreen from '../../../features/resident/screens/ParkingScreen';
+import EventScreen from '../../../features/resident/screens/EventScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,6 +18,7 @@ const ResidentStack = () => {
       <Stack.Screen name="PaymentScreen" component={PaymentScreen} />
       <Stack.Screen name="NotificationsMain" component={NotificationScreen} />
       <Stack.Screen name="ParkingMain" component={ParkingScreen} />
+      <Stack.Screen name="EventsMain" component={EventScreen} />
     </Stack.Navigator>
   );
 };

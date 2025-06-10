@@ -103,7 +103,7 @@ const QuickAccess = () => {
         { text: 'Previous Submissions', onPress: () => navigation.navigate('FeedbackHistory') },
       ],
       'Events': [
-        { text: 'Upcoming Events', onPress: () => navigation.navigate('UpcomingEvents') },
+        { text: 'Upcoming Events', onPress: () => navigation.navigate('EventsMain') },
         { text: 'My RSVPs', onPress: () => navigation.navigate('MyRSVPs') },
         { text: 'Event Calendar', onPress: () => navigation.navigate('EventCalendar') },
       ],
