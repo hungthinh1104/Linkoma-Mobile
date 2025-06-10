@@ -6,7 +6,7 @@ import ScheduleRequestScreen from '../../../features/manager/screens/ScheduleReq
 const Stack = createNativeStackNavigator();
 
 const ScheduleStack = () => (
-  <Stack.Navigator screenOptions={{ headerShown: true }}>
+  <Stack.Navigator screenOptions={{ headerShown: false }}>
     <Stack.Screen name="Schedule" component={ScheduleRequestScreen} />
   </Stack.Navigator>
 );

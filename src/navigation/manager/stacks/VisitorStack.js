@@ -6,7 +6,7 @@ import VisitorApprovalScreen from '../../../features/manager/screens/VisitorAppr
 const Stack = createNativeStackNavigator();
 
 const VisitorStack = () => (
-  <Stack.Navigator screenOptions={{ headerShown: true }}>
+  <Stack.Navigator screenOptions={{ headerShown: false}}>
     <Stack.Screen name="Visitors" component={VisitorApprovalScreen} />
   </Stack.Navigator>
 );

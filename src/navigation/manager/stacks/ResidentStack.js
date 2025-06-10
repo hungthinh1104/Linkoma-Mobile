@@ -7,7 +7,7 @@ import ResidentDetailScreen from '../../../features/manager/screens/ResidentDeta
 const Stack = createNativeStackNavigator();
 
 const ResidentStack = () => (
-  <Stack.Navigator screenOptions={{ headerShown: true }}>
+  <Stack.Navigator screenOptions={{ headerShown: false }}>
     <Stack.Screen name="Residents" component={ResidentScreen} />
     <Stack.Screen name="ResidentDetail" component={ResidentDetailScreen} />
   </Stack.Navigator>

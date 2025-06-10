@@ -6,7 +6,7 @@ import NotificationScreen from '../../../features/manager/screens/NotificationSc
 const Stack = createNativeStackNavigator();
 
 const NotificationStack = () => (
-  <Stack.Navigator screenOptions={{ headerShown: true }}>
+  <Stack.Navigator screenOptions={{ headerShown: false }}>
     <Stack.Screen name="Notifications" component={NotificationScreen} />
   </Stack.Navigator>
 );

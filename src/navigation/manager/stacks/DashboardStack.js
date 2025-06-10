@@ -6,7 +6,7 @@ import HomeScreen from '../../../features/manager/screens/HomeScreen';
 const Stack = createNativeStackNavigator();
 
 const DashboardStack = () => (
-  <Stack.Navigator screenOptions={{ headerShown: true }}>
+  <Stack.Navigator screenOptions={{ headerShown: false }}>
     <Stack.Screen name="DashboardHome" component={HomeScreen} />
   </Stack.Navigator>
 );

@@ -11,8 +11,8 @@ import {
   ReportStack,
   ScheduleStack,
   VisitorStack,
-  NotificationStack,
 } from '../stacks';
+import ContractStats from '../../../features/manager/components/contracts/ContractStats';
 
 const Tab = createBottomTabNavigator();
 
@@ -88,15 +88,6 @@ const ManagerTabs = () => {
         options={{
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="account-arrow-right" color={color} size={size} />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="Notifications"
-        component={NotificationStack}
-        options={{
-          tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="bell-outline" color={color} size={size} />
           ),
         }}
       />

@@ -7,7 +7,7 @@ import ReportDetailScreen from '../../../features/manager/screens/ReportDetailSc
 const Stack = createNativeStackNavigator();
 
 const ReportStack = () => (
-  <Stack.Navigator screenOptions={{ headerShown: true }}>
+  <Stack.Navigator screenOptions={{ headerShown: false }}>
     <Stack.Screen name="Reports" component={ReportScreen} />
     <Stack.Screen name="ReportDetail" component={ReportDetailScreen} />
   </Stack.Navigator>

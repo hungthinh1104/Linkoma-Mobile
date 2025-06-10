@@ -7,7 +7,7 @@ import FeedbackDetailScreen from '../../../features/manager/screens/FeedbackDeta
 const Stack = createNativeStackNavigator();
 
 const FeedbackStack = () => (
-  <Stack.Navigator screenOptions={{ headerShown: true }}>
+  <Stack.Navigator screenOptions={{ headerShown: false }}>
     <Stack.Screen name="Feedback" component={FeedbackScreen} />
     <Stack.Screen name="FeedbackDetail" component={FeedbackDetailScreen} />
   </Stack.Navigator>
