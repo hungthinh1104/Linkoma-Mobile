@@ -624,7 +624,7 @@ const ProfileScreen = () => {
           <Avatar.Image
             size={80}
             source={
-              residentData.ProfileImage ? { uri: residentData.ProfileImage } : require("../assets/default-avatar.png")
+              residentData.ProfileImage ? { uri: residentData.ProfileImage } : require("../../../assets/images/default-avatar.png")
             }
             style={styles.avatar}
           />

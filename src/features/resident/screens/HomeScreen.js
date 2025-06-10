@@ -92,7 +92,8 @@ const HomeScreen = () => {
             />
             <Avatar.Image 
               size={40} 
-              source={{ uri: 'https://randomuser.me/api/portraits/men/32.jpg' }} 
+              source={
+              { uri: "../../../assets/images/default-avatar.png" } }
               style={styles.avatar}
             />
           </View>

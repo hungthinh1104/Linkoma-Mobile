@@ -6,7 +6,7 @@ import ProfileScreen from '../../../features/resident/screens/ProfileScreen';
 const Stack = createNativeStackNavigator();
 
 const ProfileStack = () => (
-  <Stack.Navigator screenOptions={{ headerShown: true }}>
+  <Stack.Navigator screenOptions={{ headerShown: false }}>
     <Stack.Screen name="ProfileMain" component={ProfileScreen} />
   </Stack.Navigator>
 );
