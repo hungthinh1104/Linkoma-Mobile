@@ -26,13 +26,26 @@ const LoginForm = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [rememberMe, setRememberMe] = useState(false);
 
-  const isManager = email.toLowerCase().includes('manager');
-
   const handleLogin = () => {
-    navigation.reset({
-      index: 0,
-      routes: [{ name: isManager ? 'ManagerTabs' : 'ResidentTabs' }],
-    });
+    // Giả sử bạn có state email và password
+    if (email.trim().toLowerCase() === 'resident') {
+      navigation.reset({
+        index: 0,
+        routes: [{ name: 'ResidentTabs' }],
+      });
+    } else if (email.trim().toLowerCase() === 'manager') {
+      navigation.reset({
+        index: 0,
+        routes: [{ name: 'ManagerTabs' }],
+      });
+    } else if (email.trim().toLowerCase() === 'admin') {
+      navigation.reset({
+        index: 0,
+        routes: [{ name: 'AdminTabs' }],
+      });
+    } else {
+      Alert.alert('Sai tài khoản', 'Vui lòng nhập đúng: resident, manager hoặc admin');
+    }
   };
 
   const handleBiometricAuth = async () => {
