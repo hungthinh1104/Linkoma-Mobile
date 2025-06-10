@@ -1,0 +1,53 @@
+# Node dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native builds
+.android/
+.ios/
+build/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# TypeScript build cache
+*.tsbuildinfo
+
+# Metro cache
+.metro-cache/
+metro-cache/
+.metro-health-check*
+
+# Debug logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS system files
+.DS_Store
+
+# Certificates, keys
+*.pem
+
+# Local environment variables
+.env
+.env*.local
+
+# VSCode
+.vscode/
+
+# Git merge conflict backups
+*.orig.*
+
+# Kotlin/Java (in case using bare workflow)
+.kotlin/
+
+# IDE configs
+.idea/
